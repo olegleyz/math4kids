@@ -70,17 +70,17 @@ if __name__ == '__main__':
         )
 
     parser.add_argument \
-            ( "-v", "--version"
-            , action = "store_true"
-            , help = "show program's version number and exit"
-            )
+        ( "-v", "--version"
+        , action = "store_true"
+        , help = "show program's version number and exit"
+        )
 
     parser.add_argument \
-                ( "-o", "--operation"
-                , type=str
-                , default="all"
-                , help = "Choose operations for equation: +, -, all"        
-                )
+        ( "-o", "--operation"
+        , type=str
+        , default="all"
+        , help = "Choose operations for equation: +, -, all"        
+        )
 
     args = parser.parse_args () # parse the command line
     main()
